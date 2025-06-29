@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+html, body {
+  margin: 0; padding: 0; height: 100%;
+  background: #000;
+  color: #4caf50;
+  font-family: 'Share Tech Mono', monospace;
+  overflow-x: hidden;
+}
+
+#matrix {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: 0;
+  background: #000;
+}
+
+#logoContainer {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 15;
+  width: 120px;
+  height: 120px;
+  background: #1b3a1b; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px rgba(27, 58, 27, 0.8);
+  cursor: default;
+}
+
+#logoContainer img {
+  max-width: 60%;
+  max-height: 60%;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.7));
+}
+
+#container {
+  position: relative;
+  z-index: 10;
+  max-width: 600px;
+  margin: 40px auto 80px;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 20px 30px;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #4caf50;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px 0;
+}
+
+#fileInput {
+  display: none;
+}
+
+.custom-file-button {
+  display: inline-block;
+  background: #4caf50;
+  color: #000;
+  padding: 8px 20px;
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s;
+  margin-bottom: 10px;
+}
+
+.custom-file-button:hover {
+  background: #3a9d1a;
+}
+
+#fileName {
+  margin-left: 10px;
+  font-family: 'Share Tech Mono', monospace;
+  color: #4caf50;
+  vertical-align: middle;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  background: #111;
+  border: 1px solid #4caf50;
+  color: #4caf50;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 14px;
+  padding: 6px 8px;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+textarea {
+  height: 120px;
+}
+
+button {
+  background: #4caf50;
+  color: #000;
+  border: none;
+  padding: 10px 18px;
+  margin-top: 15px;
+  margin-right: 10px;
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #3a9d1a;
+}
+
+#result {
+  margin-top: 20px;
+  white-space: pre-wrap;
+  background: #111;
+  border: 1px solid #4caf50;
+  padding: 10px;
+  border-radius: 6px;
+  max-height: 160px;
+  overflow-y: auto;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+#downloadLink {
+  display: inline-block;
+  margin-top: 12px;
+  color: #4caf50;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#telegramButton {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #111;
+  border-top: 1px solid #4caf50;
+  text-align: center;
+  padding: 12px 0;
+  z-index: 999;
+}
+
+#telegramButton a {
+  background: #4caf50;
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  font-family: 'Share Tech Mono', monospace;
+  transition: background 0.3s;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+#telegramButton a:hover {
+  background: #66ff66;
+}
+
+footer {
+  text-align: center;
+  color: #2e7d32;
+  margin-top: 10px;
+}
