@@ -1,1 +1,1 @@
-# encryptor-decryptor
+#  XOR encryptor-decryptor
